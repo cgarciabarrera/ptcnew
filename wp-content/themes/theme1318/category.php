@@ -4,7 +4,7 @@
 	<?php if ( function_exists('yoast_breadcrumb') ) {
 		yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 	} ?>
-  <h1><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+  <h1><?php printf( __( 'Categoría: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
   <?php echo category_description(); /* displays the category's description from the Wordpress admin */ ?>
   
   <div class="clearfix">
@@ -33,7 +33,7 @@
 				
 				<div class="post-content">
 					<div class="excerpt"><?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,16);?></div>
-					<a href="<?php the_permalink() ?>" class="button">Read more</a>
+					<a href="<?php the_permalink() ?>" class="button">Leer mas...</a>
 				</div>
 			</article>
 		<?php $i++; $addclass = ""; endwhile; else: ?>
